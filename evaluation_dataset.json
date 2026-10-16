@@ -1,0 +1,51 @@
+[
+  {
+    "id": "rag_01",
+    "category": "RAG",
+    "question": "What was NVIDIA's total revenue in fiscal year 2026?",
+    "expected_answer": "$215.9 billion.",
+    "expected_evidence": "NVIDIA FY2026 10-K revenue summary."
+  },
+  {
+    "id": "rag_02",
+    "category": "RAG",
+    "question": "How much did NVIDIA's revenue grow in fiscal year 2026 compared with the previous year?",
+    "expected_answer": "Revenue increased 65% year over year.",
+    "expected_evidence": "NVIDIA FY2026 10-K revenue summary."
+  },
+  {
+    "id": "rag_03",
+    "category": "RAG",
+    "question": "What was NVIDIA's Data Center revenue growth in fiscal year 2026?",
+    "expected_answer": "Data Center revenue increased 68% year over year.",
+    "expected_evidence": "NVIDIA FY2026 10-K revenue summary."
+  },
+  {
+    "id": "rag_04",
+    "category": "RAG",
+    "question": "What were NVIDIA's two operating segments?",
+    "expected_answer": "Compute & Networking and Graphics.",
+    "expected_evidence": "NVIDIA 10-K business/overview section."
+  },
+  {
+    "id": "mcp_01",
+    "category": "MCP",
+    "question": "What is NVIDIA's current stock price?",
+    "expected_answer": "Use the live MCP result at execution time.",
+    "expected_evidence": "get_stock_price for NVDA."
+  },
+  {
+    "id": "both_02",
+    "category": "RAG + MCP",
+    "question": "What was NVIDIA's fiscal year 2026 revenue, and what is its current stock price?",
+    "expected_answer": "Revenue was $215.9 billion; stock price must come from live MCP data.",
+    "expected_evidence": "NVIDIA FY2026 10-K plus get_stock_price."
+  },
+  {
+    "id": "both_03",
+    "category": "RAG + MCP + News",
+    "question": "Compare NVIDIA's revenue growth from its latest SEC filing with its current stock price and summarize the latest relevant news.",
+    "expected_answer": "Use SEC revenue growth, live NVDA price, and only relevant returned news; if live price or news evidence is unavailable, clearly state that it was not provided rather than inventing information.",
+    "expected_evidence": "SEC/RAG plus available live stock-price and news evidence."
+  }
+]
