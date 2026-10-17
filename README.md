@@ -121,33 +121,33 @@ flowchart TD
   -----------------------------------------------------------------------
   Component                           Technology
   ----------------------------------- -----------------------------------
-  Language                            Python
+  Language                           : Python
 
-  Frontend                            Streamlit
+  Frontend                           : Streamlit
 
-  Backend API                         FastAPI, Uvicorn
+  Backend API                        : FastAPI, Uvicorn
 
-  Workflow orchestration              LangGraph
+  Workflow orchestration             : LangGraph
 
-  LLM integration                     LangChain, Groq API
+  LLM integration                    : LangChain, Groq API
 
-  Grounding evaluation                Google Gemini through
+  Grounding evaluation               : Google Gemini through
                                       `langchain-google-genai`
 
-  Embeddings                          Sentence Transformers,
+  Embeddings                         : Sentence Transformers,
                                       `all-mpnet-base-v2`
 
-  Vector database                     Pinecone
+  Vector database                    : Pinecone
 
-  Tool protocol                       Model Context Protocol (MCP),
+  Tool protocol                      : Model Context Protocol (MCP),
                                       FastMCP
 
-  Market-data access                  `yfinance`
+  Market-data access                 : `yfinance`
 
-  News feed parsing                   `feedparser` in the RSS-based
+  News feed parsing                  : `feedparser` in the RSS-based
                                       implementation
 
-  Deployment                          Docker and Google Cloud Run
+  Deployment                         : Docker and Google Cloud Run
   -----------------------------------------------------------------------
 
 The workflow and query-analysis code currently configures Groq with
